@@ -1,4 +1,7 @@
 FROM dorowu/ubuntu-desktop-lxde-vnc:latest
-EXPOSE 80
-ENTRYPOINT ["/startup.sh"]
 
+ENV NGROK_TOKEN=
+
+EXPOSE 80
+
+ENTRYPOINT ["/startup.sh"]
